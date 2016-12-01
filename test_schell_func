@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function funct {
+  echo "Step 2"
+  # funtion can't return string
+  return 88
+}
+
+echo "Step 1"
+funct
+re=$? # $? is previous command result
+echo $re
+echo "Step 3"
